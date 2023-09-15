@@ -1,0 +1,14 @@
+[package]
+name = "rust_kafka"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.30"
+clap = "4.4.3"
+env_logger = "0.10.0"
+log = "0.4.20"
+rdkafka = { version = "0.34.0", features = ["cmake-build", 'sasl'] }
+tokio = { version = "1.32.0", features = ["full"] }
